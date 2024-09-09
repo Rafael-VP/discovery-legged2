@@ -5,7 +5,7 @@ DigitalEncoderAB::DigitalEncoderAB(float cpr, float gearRatio) {
     setGearRatio(gearRatio);
 #ifdef IC2D_SETUP
     setAngleFormat(AngleFormat::LINEAR); 
-#elif
+#else // previously elif with no expression
     setAngleFormat(AngleFormat::CONTINOUS);
 #endif
 
@@ -428,7 +428,7 @@ float DigitalEncoderAB::getVelocityRad(float dt)
     }
     this->VelocityTIM->SR = 0;
     unsigned_out = (4.f/(float)this->getMaxAngle())/period;
-#elif
+#else // previously elif with no expression
 
     if ((this->VelocityTIM->SR & TIM_SR_UIF) != 0 
         and overflow_correction < MAX_OVERFLOW)  {

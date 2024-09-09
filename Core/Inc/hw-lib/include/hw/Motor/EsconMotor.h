@@ -2,7 +2,8 @@
 #define ESCON_MOTOR_H
 
 #include <framework-mbed/mbed.h>
-#include <hw/Periphericals/AnalogInput.h>
+#include <hw-lib/include/hw/Periphericals/AnalogInput.h>
+#include <framework-mbed/drivers/AnalogOut.h>
 
 struct MotorConfiguration
 {

@@ -2,7 +2,7 @@
 #define ANALOG_INPUT_H
 
 #include "framework-mbed/mbed.h"
-#include "PeripheralPins.h"
+#include <framework-mbed/targets/TARGET_STM/PeripheralPins.h>
 
 /** @brief Class of the analog input
  * 
@@ -14,6 +14,9 @@
 /**
  * Enumeration of prescaler for ADC clock
  */
+
+#define TARGET_STM32F4 1
+
 typedef enum{
     #ifdef TARGET_STM32L4
         ADC_SPCLK1 = ADC_CLOCK_SYNC_PCLK_DIV1,  /**< ADC_SPCLK1 : Use prescaler = 1 (AHB/1) */

@@ -38,18 +38,12 @@ using namespace utility;
 #define TARGET_DEFINED
 #endif
 
-// Testing configuration:
-#ifdef TARGET_STM32F429xI
+// Testing configuration, TARGET_STM32F429xI target in wrong compile order:
 #define CLOCK_FREQ      180000000
 #define TIM_USR         TIM2
 #define TIM_USR_IRQ     TIM2_IRQn
 #define TARGET_DEFINED
-#endif
 
-#ifndef TARGET_DEFINED
-    #error  "Target board not supported! "\
-            "Available targets are: L432KC, F401RE, F446RE, F411RE"
-#endif
 
 volatile int HALTicker::flag_time;
 TIM_HandleTypeDef HALTicker::mTimUserHandle;

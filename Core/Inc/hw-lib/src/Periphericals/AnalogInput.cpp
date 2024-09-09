@@ -1,4 +1,5 @@
 #include <hw-lib/include/hw/Periphericals/AnalogInput.h>
+#include <framework-mbed/targets/TARGET_STM/PeripheralPins.h>
 
 uint8_t AnalogInput::_using_ADC1 = 0;
 uint8_t AnalogInput::_using_ADC2 = 0;

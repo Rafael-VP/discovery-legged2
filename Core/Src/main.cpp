@@ -59,6 +59,8 @@
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
 #define	__FPU_PRESENT 1 // Temporary solution
+#define TARGET_NUCLEO_F429ZI 1
+#define TARGET_DEFINED 1
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/

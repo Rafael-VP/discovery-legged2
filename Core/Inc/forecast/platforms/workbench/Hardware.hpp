@@ -4,16 +4,16 @@
 // #ifdef TARGET_STM32F4
 
 #include <hw-lib/include/hw/DigitalEncoder/DigitalEncoderAB.h>
-#include <hw/Motor/EsconMotor.h>
-// #include <mbed.h>
+#include <hw-lib/include/hw/Motor/EsconMotor.h>
+#include <framework-mbed/mbed.h>
 
-#include <utility/math.hpp>
+#include <utility-lib/include/utility/math.hpp>
 
 #include <forecast/Status.hpp>
 
 #include <forecast/IHardware.hpp>
 
-#include <utility/filters/AnalogFilter.hpp>
+#include <utility-lib/include/utility/filters/AnalogFilter.hpp>
 
 namespace forecast {
 class Hardware : public IHardware {
@@ -422,4 +422,4 @@ protected:
 } // namespace forecast
 
 #endif // TARGET_STM32F4
-#endif // FORECAST_HARDWARE_HPP
+// #endif // FORECAST_HARDWARE_HPP

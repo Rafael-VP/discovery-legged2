@@ -3,7 +3,7 @@
 
 #include <Eigen3/src/eigen.h>
 #include <forecast/Controller.hpp>
-#include <utility/include/utility/filters/AnalogFilter.hpp>
+#include <utility-lib/include/utility/filters/AnalogFilter.hpp>
 
 namespace forecast {
 

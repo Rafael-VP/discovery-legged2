@@ -2,7 +2,7 @@
 #define ENV_RENDERING_CONTROL_H
 
 #include <forecast/Controller.hpp>
-#include <utility/filters/AnalogFilter.hpp>
+#include <utility-lib/include/utility/filters/AnalogFilter.hpp>
 
 namespace forecast {
 

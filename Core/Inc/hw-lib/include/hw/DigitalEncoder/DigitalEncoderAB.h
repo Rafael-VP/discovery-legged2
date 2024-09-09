@@ -21,7 +21,7 @@
     constexpr float MAX_VELOCITY_PERIOD = 1000000.f;
     constexpr float MAX_OVERFLOW = 1.f;
     constexpr float BASE_VELOCITY = (float)VELOCITY_PRESCALER/90000000.f;
-#elif
+#else // This was previously an incomplete elif. Not sure what board it's supposed to be.
     constexpr uint16_t VELOCITY_PRESCALER = 2;
     constexpr int TIM_RESOLUTION  = 65536;    // 16 bit 
     constexpr float MAX_VELOCITY_PERIOD = 1000000.f;
